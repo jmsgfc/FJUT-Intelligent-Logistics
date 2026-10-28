@@ -15,13 +15,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/jmsgfc/FJUT-Intelligent-Logistics/releases/download/v1.8.8/SmartLogistics-v1.8.8-debug.apk"><strong>下载 APK</strong></a>
+  <a href="https://github.com/jmsgfc/FJUT-Intelligent-Logistics/releases/download/v1.8.8/FJLife.apk"><strong>下载 APK</strong></a>
   ·
   <a href="https://github.com/jmsgfc/FJUT-Intelligent-Logistics/releases/tag/v1.8.8">查看发布说明</a>
 </p>
-
-> [!IMPORTANT]
-> 本项目是个人开发的第三方查询工具，并非福建理工大学官方应用。查询结果和费用估算仅供参考，实际数据与收费金额以学校智慧后勤系统为准。
 
 ## 应用预览
 
@@ -65,34 +62,18 @@
 | 最低版本 | Android 6.0（API 23） |
 | 应用权限 | 仅申请 `INTERNET` 网络权限 |
 
-## 关键实现细节
-
-### 登录与数据安全
-
-- 密码默认使用学号后 6 位，仅用于智慧后勤绑定请求，不保存密码和短信验证码。
-- 登录 Cookie 和设备标识使用 Android Keystore 生成的 AES-GCM 密钥加密，保存在应用私有目录。
-- 手机号和学号仅为方便下次填写而保存在应用私有偏好设置中，可通过清除登录状态删除。
-- 应用备份和设备迁移显式排除本地登录数据。
-- 诊断日志会隐藏手机号、学号、Cookie、密码、验证码、查询参数和设备标识。
-
-### 网络边界
-
-- 仅向预期的福建理工大学智慧后勤地址发送认证信息。
-- 如果服务器把请求重定向到学校 VPN 导航页，应用会停止请求并提示网络限制。
-- 当前版本不内置 WebVPN；校外使用需要学校允许的系统级 VPN，或等待学校将智慧后勤加入 WebVPN 资源列表。
-
 ## 下载与安装
 
 前往 [Releases](https://github.com/jmsgfc/FJUT-Intelligent-Logistics/releases/tag/v1.8.8) 下载 APK，或直接点击：
 
-**[SmartLogistics-v1.8.8-debug.apk](https://github.com/jmsgfc/FJUT-Intelligent-Logistics/releases/download/v1.8.8/SmartLogistics-v1.8.8-debug.apk)**
+**[FJLife.apk](https://github.com/jmsgfc/FJUT-Intelligent-Logistics/releases/download/v1.8.8/FJLife.apk)**
 
 当前发布包使用 Android Debug 证书签名，仅供个人测试与交流使用。正式长期分发应改用独立的 Release 签名。
 
 连接已启用 USB 调试的 Android 手机后，也可以使用 ADB 安装：
 
 ```powershell
-adb install -r SmartLogistics-v1.8.8-debug.apk
+adb install -r FJLife.apk
 ```
 
 ## 本地编译
