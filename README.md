@@ -23,10 +23,8 @@
 ## 应用预览
 
 <p align="center">
-  <img src="docs/screenshots/app-home-demo.png" width="360" alt="福建理工大学智慧后勤主界面效果图（演示数据）">
+  <img src="docs/screenshots/app-home-j1-1305.png" width="360" alt="福建理工大学智慧后勤 J1-1305 宿舍查询效果图">
 </p>
-
-<p align="center"><sub>公开预览使用脱敏演示数据，实际查询结果以学校系统返回为准。</sub></p>
 
 ## 功能
 
