@@ -1,0 +1,30 @@
+# Gradle / Android build output
+.gradle/
+build/
+app/build/
+
+# Local Android SDK and IDE state
+local.properties
+.idea/
+*.iml
+
+# Signing material and secrets
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+keystore.properties
+
+# Runtime and diagnostic files
+*.log
+*.tmp
+captures/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Local design snapshots are not part of the current source release
+design-baseline/
