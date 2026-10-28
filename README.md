@@ -46,7 +46,8 @@
 - Android 6.0（API 23）及以上。
 - JDK 17。
 - Android SDK，编译 SDK 36。
-- Gradle Wrapper 已包含在仓库中。
+- Gradle Wrapper 8.11.1 已包含在仓库中，Android Gradle Plugin 为 8.10.1。
+- 应用仅申请 Android `INTERNET` 网络权限。
 
 ## 编译
 
@@ -84,6 +85,7 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 - versionCode：`27`
 - 包名：`com.local.smartlogistics`
 - 最低 Android 版本：Android 6.0
+- GitHub Release 中的 APK 为 Android Debug 证书签名，仅供个人测试和交流使用；正式长期分发应改用独立的 Release 签名。
 
 ## 项目结构
 
